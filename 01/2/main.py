@@ -1,9 +1,10 @@
 
 def main():
     with open("01/input.txt") as f:
-        test_input = list(map(lambda l: l.strip(), f.readlines()))
+        elves = [sum(list(map(int, elf.split("\n"))))
+                 for elf in f.read().strip().split("\n\n")]
 
-    
+        print(sum(sorted(elves, reverse=True)[:3]))
 
 
 if __name__ == "__main__":
