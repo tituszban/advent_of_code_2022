@@ -1,8 +1,8 @@
 
 def main():
-    with open("24/input.txt") as f:
+    with open("25/input.txt") as f:
         test_input = list(map(lambda l: l.strip(), f.readlines()))
-
+    print("Merry Christmas!")
     
 
 
